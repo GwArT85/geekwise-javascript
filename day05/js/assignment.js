@@ -6,8 +6,10 @@ if (decision1 === "big"){
 }else if (decision1 === "home"){
   alert("You went home. I bet you voted for Reagan too.");
 }
-if (doors === "first"){
-  alert("You ended up in hell, " + name + ".")
-}else if (doors === "second"){
-  alert("You have gone through the second door, do you want a cookie?")
+switch(doors) {
+  case 'first':
+  alert("You ended up in hell, " + name + ".");
+  break;
+  case 'second':
+  alert("You have gone through the second door, do you want a cookie?");
 }
